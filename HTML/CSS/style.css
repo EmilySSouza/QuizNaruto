@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+header{
+    display: flex;
+    background-color: #4691CCC9;
+    width: 1440px;
+    height: 140px;
+   
+
+}
+
+.logo{
+    width: 267px;
+    height: 107px;
+    top: 17px;
+    left: 33px;
+}
+
+nav{
+    align-items: flex-end;
+}
