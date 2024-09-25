@@ -7,6 +7,5 @@ export default [
             { option: "Verde e preto", value: 0, correct: false },
             { option: "Preto e prateado", value: 0, correct: false }
         ]
-    }
-
+    },
 ]
