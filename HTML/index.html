@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz do Naruto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+    <!--  Cabeçalho da página  -->
     <header>
-        <img src="/IMG/naruto-logo.png" alt="Naruto Logo" class="logo">
+        <!-- Logo da página -->
+        <img src="" alt="Naruto Logo" class="logo">
+        <!-- Navegação da página -->
         <nav>
             <ul>
                 <li><a href="#">HOME</a></li>
@@ -17,17 +20,47 @@
             </ul>
         </nav>
     </header>
+    <!-- Conteúdo da página -->
     <main>
+        <!-- Container do quiz -->
         <section class="quiz-container">
+            <!-- Tela de início do quiz -->
             <div id="start-screen">
+                <!-- Título da tela de início do quiz -->
                 <h1>Quiz de Naruto</h1>
+                <!-- Texto de apresentação do quiz -->
                 <p>Quer testar seus conhecimentos sobre Naruto?</p>
                 <p>E descubra quanto voce é fã do anime</p>
                 <p>Perguntas sobre Naruto e Naruto Shippuden</p>
-                <button class="btn" onclick="">Iniciar</button>
+                <!-- Botão para iniciar o quiz -->
+                <button class="btn" onclick="startQuiz()">Iniciar</button>
+            </div>
+            <!-- Tela de perguntas do quiz -->
+            <div id="quiz-screen" style="display: none;">
+                <!-- Titulo da pergunta -->
+                <h2 id="question"></h2>
+                <!-- Opções de resposta -->
+                <div id="options"></div>
+                <!-- Botão para próxima pergunta -->
+                <button class="btn" id="next-btn" style="display: none;" onclick="nextQuestion()">Próximo</button>
+            </div>
+            <!-- Tela de resultado do quiz -->
+            <div id="result-screen" style="display: none;">
+            <!-- Titulo da tela de resultado -->
+            <h2>Sua pontuação foi:</h2>
+            <!-- Pontuação do usuário -->
+            <div id="score"></div>
+            <!-- Feedback para o usuário -->
+            <p id="feedback"></p>
+            <!-- Botão para reiniciar o quiz -->
+            <button class="btn" onclick="restartQuiz()">Reiniciar</button>
             </div>
         </section>
     </main>
+    <!-- Rodapé da pagina -->
+    <footer>
+        <p>&copy; 2024 Quiz do Naruto. Todos os direitos reservados.</p>
+    </footer>
     
 </body>
 </html>
