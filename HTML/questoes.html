@@ -1,22 +1,39 @@
 <html lang="pt-BR">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Naruto</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+
+    <link rel="stylesheet" href="../CSS/questoes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div id="quiz-container">
-        <div class="question" id="question"></div>
-        <div class="answers" id="answers">
-            <button class="answer-button" data-value="0"></button>
-            <button class="answer-button" data-value="1"></button>
-            <button class="answer-button" data-value="2"></button>
-            <button class="answer-button" data-value="3"></button>
+    <header>
+        <img src="../IMG/image.png" alt="Imagem da logo do Naruto">
+        <h1 class="question" id="question"></h1>
+    </header>
+    <main>
+        <div id="quiz-container">
+            <div class="answers" id="answers">
+                <button class="answer-button" data-value="0"></button>
+                <button class="answer-button" data-value="1"></button>
+                <button class="answer-button" data-value="2"></button>
+                <button class="answer-button" data-value="3"></button>
+            </div>
+            <div id="buttonNext">
+                <button id="next-button" class="button" disabled>Próxima Pergunta</button>
+            </div>
         </div>
-        <button id="next-button" class="button" disabled>Próxima Pergunta</button>
-    </div>
+
+        
+    </main>
 
     <script type="module" src="../JS/script.js"></script>
 </body>
+
 </html>

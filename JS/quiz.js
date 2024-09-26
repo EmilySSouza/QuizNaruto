@@ -7,9 +7,9 @@ let answered = false;
 export function showQuestion(questionElement, answerButtons, nextButton) {
     const questionList = arrayQuestions[questionIndex];
  
-    questionElement.innerHTML = `<h3>${questionIndex + 1}. ${questionList.question}</h3>`;
-     answered = false;
-     nextButton.disabled = true;
+    questionElement.innerHTML = `${questionList.question}`;
+    answered = false;
+    nextButton.disabled = true;
     answerButtons.forEach((button, index) => {
         if (index < questionList.answers.length) {
             button.innerText = questionList.answers[index].option;
@@ -23,6 +23,7 @@ export function selectAnswer(answerValue, nextButton) {
     if(!answered){
     console.log(points += answerValue);
     answered = true;
+    nextButton.style.background = "#F66C2D";
     }
 
     nextButton.disabled = false;
