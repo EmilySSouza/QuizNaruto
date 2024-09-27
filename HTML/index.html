@@ -10,10 +10,10 @@
     <!--  Cabeçalho da página  -->
     <header>
         <!-- Logo da página -->
-        <img src="" alt="Naruto Logo" class="logo">
+        <img src="..//IMG/image.png" alt="Naruto Logo" class="logo">
         <!-- Navegação da página -->
         <nav>
-            <ul>
+            <ul class="navegacao">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="sobre.html">SOBRE</a></li>
                 <li><a href="criadores.html">CRIADORES</a></li>
@@ -25,6 +25,8 @@
         <!-- Container do quiz -->
         <section class="quiz-container">
             <!-- Tela de início do quiz -->
+             <div class="imagemFundo">
+                <div class="overlay"></div>
             <div id="start-screen">
                 <!-- Título da tela de início do quiz -->
                 <h1>Quiz de Naruto</h1>
@@ -35,6 +37,7 @@
                 <!-- Botão para iniciar o quiz -->
                 <button class="btn" onclick="startQuiz()">Iniciar</button>
             </div>
+        </div>
             <!-- Tela de perguntas do quiz -->
             <div id="quiz-screen" style="display: none;">
                 <!-- Titulo da pergunta -->

@@ -6,19 +6,83 @@
   }
 
 header{
+    background-color: #010d16;
+    width: 100%; /* Use 100% para o header ajustar-se à largura da tela */
+    height: 100%;
     display: flex;
-    background-color: #4691CCC9;
-    width: 1440px;
-    height: 140px;
+    align-items: center; /* Centraliza verticalmente os itens no header */
+    justify-content: space-between; /* Espaça os itens no header */
+    padding: 0 20px; /* Adiciona espaçamento interno para a logo e a navegação */
+   
 }
 
+a{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+li{
+    list-style-type: none;
+}
+
+
 .logo{
-    width: 267px;
-    height: 107px;
-    top: 17px;
-    left: 33px;
+    width: 237px;
+    height: 77px;
+    margin-right: 40px;
 }
 
 nav{
-    align-items: flex-end;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center
+    
+    
 }
+
+#start-screen{
+    position: relative; 
+    color: white; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.navegacao{
+    display: flex;
+    gap: 300px; /* Espaçamento horizontal entre os itens do menu */
+    text-decoration: none;
+    justify-content: center;
+    
+}
+
+/* Imagem de fundo com efeito escurecido */
+
+.imagemFundo {
+    background-image: url('../IMG/ImgFundo.jpg');
+    height: 1024px; /* Altura da div */
+    width: 1580px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 0;
+}
+
+
+
+
