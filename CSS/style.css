@@ -5,14 +5,24 @@
     box-sizing: border-box;
 }
 
-header{
+:root {
+    font-family: "Bungee", system-ui;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
     background-color: #010d16;
-    width: 100%; /* Use 100% para o header ajustar-se à largura da tela */
+    width: 100%;
     height: 100%;
     display: flex;
-    align-items: center; /* Centraliza verticalmente os itens no header */
-    justify-content: space-between; /* Espaça os itens no header */
-    padding: 0 20px; /* Adiciona espaçamento interno para a logo e a navegação */
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem ; 
    
 }
 
@@ -29,48 +39,69 @@ li{
 
 
 .logo{
-    width: 237px;
-    height: 77px;
-    margin-right: 40px;
+    width: 180px;
 }
 
-nav{
-    flex-grow: 1;
+
+.navegacao {
     display: flex;
-    justify-content: center
+    justify-content: space-evenly;
     
-    
+}
+
+nav {
+    flex-grow: 1; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 #start-screen{
     position: relative; 
     color: white; 
     text-align: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     justify-content: center;
     z-index: 1;
+    z-index: 1;
+    height: 100%; 
+    width: 100%;
+    gap: 10px;
 }
 
-.navegacao{
-    display: flex;
-    gap: 300px; /* Espaçamento horizontal entre os itens do menu */
-    text-decoration: none;
-    justify-content: center;
-    
+#start-screen button {
+    all: unset;
+    background-color: #F66C2D;
+    padding: 10px;
+    border-radius: 10px;
 }
+
+footer {
+    background-color: #010d16;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed; /* Mantém o rodapé fixo na tela */
+    bottom: 0; /* Fixa na parte inferior */
+    width: 100%; /* Ocupa toda a largura da página */
+}
+
 
 /* Imagem de fundo com efeito escurecido */
 
 .imagemFundo {
     background-image: url('../IMG/ImgFundo.jpg');
-    height: 1024px; /* Altura da div */
-    width: 1580px;
+    background-position: center center;
+    height: 100vh; /* Altura da div */
+    width: 100vw;
     background-size: cover;
     position: relative;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    z-index: 1;
 }
 
 .overlay {
@@ -82,7 +113,3 @@ nav{
     background-color: rgba(0, 0, 0, 0.8); 
     z-index: 0;
 }
-
-
-
-
