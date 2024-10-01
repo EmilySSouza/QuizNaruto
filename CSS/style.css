@@ -75,6 +75,11 @@ main {
     gap: 10px;
 }
 
+#start-screen h1{
+    color: #F66C2D;
+    font-size: xx-large;
+}
+
 #start-screen button {
     all: unset;
     background-color: #F66C2D;
