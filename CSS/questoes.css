@@ -21,7 +21,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #4691CC;
+    background-color: #010d16;
     padding-block: 2.4rem;
 }
 
@@ -62,11 +62,11 @@ main #quiz-container .answers button {
     background-color: #F0EBDF;
     font-family: "Bungee", system-ui;
     font-size: 2.4rem;
-    
+    transition: transform 1s;
 }
 
 main #quiz-container .answers button:hover {
-    transition: 1s;
+    border: 5px solid #F66C2D;
     transform: scale(1.03);
 }
 
@@ -135,4 +135,16 @@ main h2 {
 
 button {
     cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 3.6rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }

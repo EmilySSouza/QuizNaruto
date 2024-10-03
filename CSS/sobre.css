@@ -84,6 +84,7 @@ nav {
     display: flex;
     flex-direction: column; 
     justify-content: center;
+    padding-inline: 36px;
 } 
 
 footer {
@@ -93,4 +94,19 @@ footer {
     padding: 1rem 0;
     bottom: 0; /* Fixa na parte inferior */
     width: 100%; /* Ocupa toda a largura da página */
+}
+
+@media (max-width: 770px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navegacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
 }
