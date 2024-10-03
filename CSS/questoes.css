@@ -34,6 +34,21 @@ header h1 {
     color: #FFFFFF;
 }
 
+header .image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+}
+
+header .back img {
+    display: flex;
+    
+    justify-content: start;
+    align-items: start;
+    width: 4rem;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -103,6 +118,7 @@ main h2 {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
+    padding-inline: 3.6rem;
 }
 
 .close-button {
@@ -137,14 +153,13 @@ button {
     cursor: pointer;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
     header {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        padding: 3.6rem;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        gap: 30px; /* Espaçamento entre os itens */
+        padding: 3.6rem; /* Espaciamento interno do cabeçalho */
+        align-items: center; /* Centraliza os itens */
+        justify-content: center; /* Alinha os itens ao centro */
+        text-align: center; /* Alinha o texto ao centro */
     }
 }

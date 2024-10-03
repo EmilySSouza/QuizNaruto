@@ -14,8 +14,12 @@
 
 <body>
     <header>
-        <img src="../IMG/image.png" alt="Imagem da logo do Naruto">
-        <h1 class="question" id="question"></h1>
+        <div class="image">
+            <a class="back" href="../HTML/index.html"><img src="../IMG/iconBack.svg"
+                    alt="Botão de voltar para a tela primária"></a>
+            <img src="../IMG/image.png" alt="Imagem da logo do Naruto">
+            </div>
+            <h1 class="question" id="question"></h1>
     </header>
     <main>
         <div id="quiz-container">
@@ -37,13 +41,14 @@
                 <div class="modal-content">
                     <p></p>
                     <button id="restart-button">Reiniciar Quiz</button>
+                    <button id="to-go-back">Voltar para a página inicial</button>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <script type="module" src="../JS/script.js"></script>
+    <script type="module" src="../JS/quiz.js"></script>
 </body>
 
 </html>
