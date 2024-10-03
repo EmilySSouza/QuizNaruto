@@ -35,8 +35,6 @@ function startQuiz() {
     window.location.href = "../Pages/questions.html";
 }
 
-console.log
-
 // Função para mostrar a pergunta
 function showQuestion(index) {
     const currentQuestion = arrayQuestions[index];
