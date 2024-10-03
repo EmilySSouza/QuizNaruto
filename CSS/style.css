@@ -8,6 +8,7 @@
 :root {
     font-family: "Bungee", system-ui;
     font-size: 62.5%;
+    user-select: none;
 }
 
 body {
@@ -102,6 +103,7 @@ main {
 
 #start-screen button {
     font-size: 2.2rem;
+    cursor: pointer;
 }
 
 .imagemFundo {
@@ -145,6 +147,7 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+        margin-bottom: 2rem;
         
     }
 }

@@ -8,6 +8,7 @@
 :root{
     font-family: "Bungee", system-ui;
     font-size: 62.5%;
+    user-select: none;
 }
 
 body {
@@ -114,6 +115,6 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        
+        margin-bottom: 2rem;
     }
 }
