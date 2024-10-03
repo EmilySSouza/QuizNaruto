@@ -43,7 +43,6 @@ header .image {
 
 header .back img {
     display: flex;
-    
     justify-content: start;
     align-items: start;
     width: 4rem;
@@ -68,7 +67,7 @@ main #quiz-container .answers {
     display: flex;
     flex-direction: column;
     gap: 3.6rem;
-    margin-top: 18.8rem;
+    margin-top: 8rem;
 }
 
 main #quiz-container .answers button {
