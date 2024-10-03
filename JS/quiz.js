@@ -24,15 +24,15 @@ function isTipo(pVal) {
 }
 
 function startQuiz() {
-    userName = prompt("Digite seu nome para iniciar o quiz:");
+    userName = prompt("Digite seu nome para iniciar o quiz (Apenas seu primeiro nome): ");
 
     while (userName.length <= 3 || !isTipo(userName)) {
-        userName = prompt("Nome inválido. Digite um nome válido");
+        userName = prompt("Nome inválido. Digite um nome válido (Apenas seu primeiro nome)");
     }
 
     localStorage.setItem('userName', userName);
 
-    window.location.href = "../HTML/questoes.html";
+    window.location.href = "../Pages/questions.html";
 }
 
 console.log
@@ -94,7 +94,7 @@ function restartQuiz() {
 }
 
 toGoBack.addEventListener("click", () => {
-    window.location = "../HTML/index.html";
+    window.location = "../index.html";
 })
 
 // Função para ir para a próxima pergunta

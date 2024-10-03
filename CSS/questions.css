@@ -18,6 +18,8 @@ body {
 
 header {
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -26,7 +28,7 @@ header {
 }
 
 header img {
-    width: 26.7rem;
+    width: 18rem;
 }
 
 header h1 {
@@ -80,7 +82,7 @@ main #quiz-container .answers button {
 }
 
 main #quiz-container .answers button:hover {
-    border: 5px solid #F66C2D;
+    border: 0.5rem solid #F66C2D;
     transform: scale(1.03);
 }
 
@@ -97,6 +99,7 @@ main #buttonNext #next-button {
     font-family: "Bungee", system-ui;
     background-color: #F66C2D;
     color: #FFFFFF;
+    margin-bottom: 8rem;
 }
 
 main h2 {
@@ -123,7 +126,7 @@ main h2 {
 .close-button {
     cursor: pointer;
     float: right;
-    font-size: 24px;
+    font-size: 2.4rem;
     border: none;
     background: none;
 }
@@ -152,10 +155,19 @@ button {
     cursor: pointer;
 }
 
+footer {
+    background-color: #010d16;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    bottom: 0; /* Fixa na parte inferior */
+    width: 100%; /* Ocupa toda a largura da página */
+}
+
 @media (max-width: 1200px) {
     header {
         flex-direction: column; /* Muda a direção para coluna em telas menores */
-        gap: 30px; /* Espaçamento entre os itens */
+        gap: 3rem; /* Espaçamento entre os itens */
         padding: 3.6rem; /* Espaciamento interno do cabeçalho */
         align-items: center; /* Centraliza os itens */
         justify-content: center; /* Alinha os itens ao centro */
