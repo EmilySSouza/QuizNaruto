@@ -32,7 +32,7 @@ function startQuiz() {
 
     localStorage.setItem('userName', userName);
 
-    window.location.href = "../Pages/questions.html";
+    window.location.href = './Pages/questions.html';
 }
 
 // Função para mostrar a pergunta
